@@ -1,0 +1,55 @@
+@import './public.scss';
+#about{
+    .content{
+        width: 100vw;
+        @include page_scroll;
+        .image_box{
+            width: 100%;
+            margin-top: 90px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .main{
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row;
+            margin: 30px auto;
+            .main_nav{
+                div{
+                    width: 200px;
+                    line-height: 80px;
+                    text-align: center;
+                    background-color: rgb(71, 160, 187);
+                    color: #fff;
+                    font-size: 22px;
+                    box-sizing: border-box;
+                }
+                .text{
+                    height: 80px;
+                    color: #000;
+                    background-color: #fff;
+                    font-size: 18px;
+                    box-shadow: 0 0 10px 2px #ccc;
+                    display: flex;
+                    flex-direction: column;
+                    transition: 0.3s all;
+                    &:hover{
+                        color: #fff;
+                        background-color: $theme-color;
+                    }
+                }
+            }
+            .main_view{
+                width: 80%;
+                height: auto;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+}

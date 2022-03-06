@@ -1,0 +1,143 @@
+@import '../styles/public.scss';
+.page_child{
+    width:100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+    background-color:rgb(239,235,234);
+    .title{
+        width: 100%;
+        font-size: 38px;
+        margin-top: 150px;
+        text-align: center;
+    }
+     .content{
+        width: 92vw;
+        margin: 60px 4vw;
+        >div{
+            margin: 25px 0;
+            display: flex;
+            flex-direction: row;
+            >div{
+               margin-left: auto;
+               margin-right: 0;
+               display: flex;
+               flex-direction: column;
+               .router_link{
+                   flex-grow: 1;
+                   color: #000;
+                   font-size: 18px;
+                   position: relative;
+                   line-height: 60px;
+                   .time{
+                       position: absolute;
+                       right: 20px;
+                       font-weight: bold;
+                       text-align: center;
+                       color: rgb(105, 175, 216);
+                   }
+                   &:hover{
+                       background-color: rgba(202, 199, 199, 0.774);
+                   }
+                   
+               }
+            }
+        }
+        .box{
+            width: 48%;
+            height: auto;
+            overflow: hidden;
+            .el-carousel__item{
+            position: absolute;
+                img{
+                width: 100%;
+                height: 100%;
+                }
+            }
+        }
+        .mark_boxs{
+            width: 100%;
+            margin: 40px 0px;
+            align-items: center;
+            >div{
+                position: relative;
+                right: 50%;
+                transform: translateX(50%);
+                display: flex;
+                flex-direction: row;
+            }
+            .mark_hover{
+                margin: 0px 50px;
+            }
+        }
+    }
+    .content_notice{
+        width: 92vw;
+        margin: 60px 4vw;
+        .notice{
+            width: 100%;
+            .text{
+                width: 100%;
+                margin: 30px 0px;
+                color: $theme-color;
+                font-size: $theme-font-size;
+            }
+            .notice_box{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                >div{
+                    height: 350px;
+                    box-shadow: 0 2px 20px 0 rgba(2, 2, 2, 0.2);
+                    border-bottom: 5px solid $theme-color;
+                    background-color: #fff;
+                    >div{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .text{
+                            display: block;
+                            color: $font-color;
+                            font-size: 18px;
+                            margin: 0px;
+                            flex-grow: 1;
+                            &:hover{
+                                color: $theme-color;
+                                .time>div{
+                                    border: 1px solid $theme-color;
+                                }
+                            }
+                            .time{
+                                color: rgb(196, 211, 238);
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                margin-top: 10px;
+                                >div{
+                                    margin-left: auto;
+                                    margin-right: 0px;
+                                    border: 1px solid rgba(204, 204, 204, 0.493);
+                                    width:70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .notice_left{
+                    width: 40%;
+                    >div{
+                        width: 80%;
+                        height: 85%;
+                        margin-left: 10%;
+                        margin-top: 5%;
+                    }
+                }
+                .notice_right{
+                    margin-left: auto;
+                    margin-right: 0px;
+                    width: 56%;
+                }
+            }
+        }
+    }
+}

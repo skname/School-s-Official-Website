@@ -1,0 +1,11 @@
+$font-color:#4B4B4B; // 文章字体颜色
+$theme-color:#01529C; // 主题颜色
+$theme-font-size: 38px;
+@mixin text_overflow{ // 混合器：文字溢出
+    text-overflow: ellipsis;
+}
+@mixin page_scroll{
+    width:100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
